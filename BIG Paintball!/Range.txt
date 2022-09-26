@@ -1,0 +1,5 @@
+for i,v in pairs(game:GetService("ReplicatedStorage").Framework.Modules["1 | Directory"].Guns:GetChildren()) do
+pcall(function()
+require(v)[tostring(i)].velocity = 9999999
+end)
+end

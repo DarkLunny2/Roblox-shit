@@ -1,0 +1,3 @@
+for i,v in pairs(game.Players:GetChildren()) do
+local billboard = Instance.new("BillboardGui");billboard.SizeOffset = Vector2.new(0,1);billboard.Size = UDim2.new(5,0,1.5,0);local label = Instance.new("TextLabel"); label.BackgroundTransparency = 1; label.Size = UDim2.new(1,0,1,0); label.Text = v.Name; label.TextScaled = true;label.Parent = billboard;billboard.Parent = v.Character.Head;label.TextColor3 = Color3.fromRGB(32,255,170);billboard.AlwaysOnTop = true
+end
